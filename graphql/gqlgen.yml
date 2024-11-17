@@ -1,6 +1,6 @@
 schema: schema.graphql
 
-modesl:
+models:
   Account:
     model: github.com/Ujjawal0619/Go-gRPC/graphql.Account
     fields:
