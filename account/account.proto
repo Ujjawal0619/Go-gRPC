@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package pb;
-option go_package = "github.com/Ujjawal0619/Go-gRPC/account/pb";
+option go_package = "./";
 
 message Account {
     string id = 1;
