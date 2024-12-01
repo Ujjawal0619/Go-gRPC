@@ -6,8 +6,7 @@ COPY vendor vendor
 COPY account account
 COPY catalog catalog
 COPY order order
-COPY graphql graphql
-RUN GO111MODULE=on go build -mod vendor -o /go/bin/app ./graphql
+RUN GO111MODULE=on go build -mod vendor -o /go/bin/app ./order/cmd/order
 
 FROM alpine:3.11
 WORKDIR /usr/bin
