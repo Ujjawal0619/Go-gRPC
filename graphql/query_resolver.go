@@ -74,7 +74,7 @@ func (r *queryResolver) Products(ctx context.Context, pagination *PaginationInpu
 	if query != nil {
 		q = *query
 	}
-	productList, err := r.server.catalogClient.GetProducts(ctx, skip, take)
+	productList, err := r.server.catalogClient.GetProducts(ctx, skip, take, nil, q)
 	if err != nil {
 		log.Println(err)
 		return nil, err
